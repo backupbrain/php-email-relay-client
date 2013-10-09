@@ -6,6 +6,8 @@
  *  This class connects to an SMTP server using the RFC2487 protocol.
  *  It converts an Email class into SMTP commands to send an email through 
  *  a relay mail server.
+ *  to send an email you must connect() to the server, then send($Email)
+ *  don't forget to disconnect() when you are done.
  */
 class Courier {
 
